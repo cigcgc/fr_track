@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gowin-synthesis-project>
+<Project>
+    <Version>beta</Version>
+    <Device id="GW2A-18C" package="eLQFP144" speed="8" partNumber="GW2A-LV18EQ144C8/I7"/>
+    <FileList>
+        <File path="C:/Gowin/Gowin_V1.9.9_x64/IDE/ipcore/FPSQRT/data/FP_Sqrt.v" type="verilog"/>
+        <File path="C:/Gowin/Gowin_V1.9.9_x64/IDE/ipcore/FPSQRT/data/FP_Sqrt_wrap.v" type="verilog"/>
+    </FileList>
+    <OptionList>
+        <Option type="disable_insert_pad" value="1"/>
+        <Option type="include_path" value="C:/Gowin/Gowin_V1.9.9_x64/IDE/ipcore/FPSQRT/data"/>
+        <Option type="include_path" value="E:/a_Messi/Gowin_prj/1energe/2024-5/rs_h_v0.3/rs_h/src/fp_sqrt/temp/FPSQRT"/>
+        <Option type="output_file" value="fp_sqrt.vg"/>
+        <Option type="output_template" value="fp_sqrt_tmp.v"/>
+        <Option type="ram_balance" value="1"/>
+        <Option type="ram_rw_check" value="1"/>
+        <Option type="verilog_language" value="sysv-2017"/>
+    </OptionList>
+</Project>

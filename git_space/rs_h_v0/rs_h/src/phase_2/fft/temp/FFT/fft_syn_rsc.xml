@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="FFT_Top_24" Register="235" Alu="218" Lut="707" MULT36X36="4" Bsram="10" T_Register="235(235)" T_Alu="218(218)" T_Lut="707(707)" T_MULT36X36="4(4)" T_Bsram="10(10)"/>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gowin-synthesis-project>
+<Project>
+    <Version>beta</Version>
+    <Device id="GW2A-18C" package="eLQFP144" speed="8" partNumber="GW2A-LV18EQ144C8/I7"/>
+    <FileList>
+        <File path="D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\IP core\cordic\cordic.v" type="verilog"/>
+        <File path="D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\Phase_measure.v" type="verilog"/>
+        <File path="D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\adc_ads804e.v" type="verilog"/>
+        <File path="D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\adc_data.v" type="verilog"/>
+        <File path="D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\dds_happen.v" type="verilog"/>
+        <File path="D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\defuzzification.v" type="verilog"/>
+        <File path="D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\feedback_processing.v" type="verilog"/>
+        <File path="D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\fifo_hs\fifo_hs_adc_i.v" type="verilog"/>
+        <File path="D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\fifo_hs\fifo_hs_adc_v.v" type="verilog"/>
+        <File path="D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\fuzzification.v" type="verilog"/>
+        <File path="D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\fuzzy_inference.v" type="verilog"/>
+        <File path="D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\gowin_clkdiv\gowin_clkdiv10.v" type="verilog"/>
+        <File path="D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\gowin_clkdiv\gowin_clkdiv500k.v" type="verilog"/>
+        <File path="D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\gowin_clkdiv\gowin_clkdiv5M.v" type="verilog"/>
+        <File path="D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\gowin_clkdiv\gowin_clkdiv_2M5.v" type="verilog"/>
+        <File path="D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\gowin_prom\gowin_prom.v" type="verilog"/>
+        <File path="D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\gowin_rpll\gowin_rpll100.v" type="verilog"/>
+        <File path="D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\gowin_rpll\gowin_rpll_100M.v" type="verilog"/>
+        <File path="D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\gowin_rrom\gowin_rrom.v" type="verilog"/>
+        <File path="D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\gowin_sdpb\gowin_sdpb_02.v" type="verilog"/>
+        <File path="D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\gowin_sdpb_4096\gowin_sdpb_2048.v" type="verilog"/>
+        <File path="D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\incremental_pid_control.v" type="verilog"/>
+        <File path="D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\mcp41010.v" type="verilog"/>
+        <File path="D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\phase_2\dds_drive.v" type="verilog"/>
+        <File path="D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\pid_controller.v" type="verilog"/>
+        <File path="D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\save_fsmc.v" type="verilog"/>
+        <File path="D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\save_send_adc.v" type="verilog"/>
+        <File path="D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\sin_to_square.v" type="verilog"/>
+        <File path="D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\top.v" type="verilog"/>
+    </FileList>
+    <OptionList>
+        <Option type="disable_insert_pad" value="0"/>
+        <Option type="global_freq" value="100.000"/>
+        <Option type="looplimit" value="2000"/>
+        <Option type="output_file" value="D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\impl\gwsynthesis\rs_h.vg"/>
+        <Option type="print_all_synthesis_warning" value="0"/>
+        <Option type="ram_rw_check" value="0"/>
+        <Option type="top_module" value="top"/>
+        <Option type="vcc" value="1.0"/>
+        <Option type="vccx" value="3.3"/>
+        <Option type="verilog_language" value="verilog-2001"/>
+        <Option type="vhdl_language" value="vhdl-1993"/>
+    </OptionList>
+</Project>

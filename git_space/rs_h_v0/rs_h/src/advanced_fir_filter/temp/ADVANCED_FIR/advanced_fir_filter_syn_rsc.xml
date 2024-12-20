@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Module name="Advanced_FIR_Filter_Top" Register="13278" Alu="35380" Lut="16696" MULT18X18="48" Bsram="1" Ssram="512" T_Register="13278(13278)" T_Alu="35380(35380)" T_Lut="16696(16696)" T_MULT18X18="48(48)" T_Bsram="1(1)" T_Ssram="512(512)"/>

@@ -1,0 +1,14 @@
+-d D:\Joy\project\Gowin_project\rs_h_v0\rs_h\impl\gwsynthesis\rs_h.vg
+-p GW2A-18C-eLQFP144-8
+-pn GW2A-LV18EQ144C8/I7
+-cst D:\Joy\project\Gowin_project\rs_h_v0\rs_h\src\rs_h.cst
+-cfg D:\Joy\project\Gowin_project\rs_h_v0\rs_h\impl\pnr\device.cfg
+-bit
+-tr
+-ph
+-timing
+-cst_error
+-convert_sdp32_36_to_sdp16_18
+-correct_hold 1
+-route_maxfan 23
+-global_freq 100.000

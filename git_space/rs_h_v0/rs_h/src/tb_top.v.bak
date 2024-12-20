@@ -1,0 +1,233 @@
+`timescale 1ns / 1ns
+
+module tb_top;
+	reg FPGA_CLK;
+	reg RST;
+	wire led4;
+	wire led3;
+	
+	reg cs_stm32;
+	reg w_en_stm32;
+	reg r_en_stm32;
+	reg [7:0]addr_stm32;
+	
+	reg PD7;
+	reg PG9;
+	reg PG12;
+	
+	reg [15:0] data_stm32;
+	wire mcp41010_mosi1 ;
+	wire mcp41010_sck1  ;
+	wire mcp41010_cs1  ; 
+	wire mcp41010_mosi2 ;
+	wire mcp41010_sck2 ; 
+	wire mcp41010_cs2;	
+
+	reg [11:0] adc_in_v;
+	wire ad1_clk;
+	wire ad1_oe;
+	
+	reg [11:0] adc_in_i;
+	wire ad2_clk;
+	wire ad2_oe;
+	reg V_PHASE;
+    reg I_PHASE;
+
+	
+
+GSR GSR(.GSRI(1'b1));
+top insit_top(
+	.FPGA_CLK(FPGA_CLK),
+	.RST(RST),
+	.led4(led4),
+	.led3(led3),
+	//FSMC
+	//FSMC
+	.cs_stm32(cs_stm32),
+	.w_en_stm32(w_en_stm32),
+	.r_en_stm32(r_en_stm32),
+	.addr_stm32(addr_stm32),
+	
+	.data_stm32(data_stm32),
+	
+	.PD7(PD7),
+	.PG9(PG9),
+	.PG12(PG12),
+	 .mcp41010_mosi1( mcp41010_mosi1 ) ,
+	 .mcp41010_sck1 ( mcp41010_sck1  ) ,
+	 .mcp41010_cs1  ( mcp41010_cs1   ) ,
+	 .mcp41010_mosi2( mcp41010_mosi2 ) ,
+	 .mcp41010_sck2 ( mcp41010_sck2  ) ,
+	 .mcp41010_cs2	( mcp41010_cs2	)  ,
+	.adc_in_v(adc_in_v),
+	.ad1_clk(ad1_clk),
+	.ad1_oe(ad1_oe),
+	
+	.adc_in_i(adc_in_i),
+	.ad2_clk(ad2_clk),
+	.ad2_oe(ad2_clk),
+	.V_PHASE(V_PHASE),
+	.I_PHASE(I_PHASE)
+	 
+	
+		
+);
+initial begin
+	FPGA_CLK = 0;
+	RST = 0;
+	cs_stm32 = 1;
+	w_en_stm32 = 1;
+	r_en_stm32 = 1;
+	addr_stm32 = 0;
+	adc_in_i = 0;
+	adc_in_v = 0;
+	V_PHASE = 0;
+	I_PHASE = 0;
+	//data_stm32 = 0;
+	#145;
+	RST = 1;
+	#60185;
+	/*
+	//读数据
+		cs_stm32 = 0;
+		r_en_stm32 = 0;
+		addr_stm32 = 8'h81;
+	#1500;
+		cs_stm32 = 0;
+		r_en_stm32 = 1;
+		addr_stm32 = 8'h81;
+	#150;
+	
+		cs_stm32 = 0;
+		r_en_stm32 = 0;
+		addr_stm32 = 8'h82;
+	#1500;
+		cs_stm32 = 0;
+		r_en_stm32 = 1;
+		addr_stm32 = 8'h82;
+	#150;
+
+		cs_stm32 = 0;
+		r_en_stm32 = 0;
+		addr_stm32 = 8'h83;
+	#1500;
+		cs_stm32 = 0;
+		r_en_stm32 = 1;
+		addr_stm32 = 8'h83;
+	#150;
+
+		cs_stm32 = 0;
+		r_en_stm32 = 0;
+		addr_stm32 = 8'h84;
+	#1500;
+		cs_stm32 = 0;
+		r_en_stm32 = 1;
+		addr_stm32 = 8'h84;
+	#150;
+
+		cs_stm32 = 0;
+		r_en_stm32 = 0;
+		addr_stm32 = 8'h85;
+	#1500;
+		cs_stm32 = 0;
+		r_en_stm32 = 1;
+		addr_stm32 = 8'h85;
+	#150;
+
+		cs_stm32 = 0;
+		r_en_stm32 = 0;
+		addr_stm32 = 8'h86;
+	#1500;
+		cs_stm32 = 0;
+		r_en_stm32 = 1;
+		addr_stm32 = 8'h86;
+	#150;
+
+		cs_stm32 = 0;
+		r_en_stm32 = 0;
+		addr_stm32 = 8'h87;
+	#1500;
+		cs_stm32 = 0;
+		r_en_stm32 = 1;
+		addr_stm32 = 8'h87;
+	#150;
+
+		cs_stm32 = 0;
+		r_en_stm32 = 0;
+		addr_stm32 = 8'h88;
+	#1500;
+		cs_stm32 = 0;
+		r_en_stm32 = 1;
+		addr_stm32 = 8'h88;
+	#150;	*/
+	//写数据
+	
+		cs_stm32 = 0;
+		w_en_stm32 = 0;
+		addr_stm32 = 8'h00;
+		data_stm32 = 16'h00aa;		
+		#1500;
+		cs_stm32 = 1;
+		w_en_stm32 = 1;
+		addr_stm32 = 8'h00;
+		data_stm32 = 16'h00ee;			
+		#150;
+		
+		cs_stm32 = 0;
+		w_en_stm32 = 0;
+		addr_stm32 = 8'h01;
+		data_stm32 = 16'h00bb;
+		#1500;
+		cs_stm32 = 1;
+		w_en_stm32 = 1;
+		addr_stm32 = 8'h01;
+		data_stm32 = 16'h00ee;
+		#150;
+
+		cs_stm32 = 0;
+		w_en_stm32 = 0;
+		addr_stm32 = 8'h02;
+		data_stm32 = 16'h00cc;
+		#1500;
+		cs_stm32 = 1;
+		w_en_stm32 = 1;
+		addr_stm32 = 8'h02;
+		data_stm32 = 16'h00ee;
+		#150;	
+
+		cs_stm32 = 0;
+		w_en_stm32 = 0;
+		addr_stm32 = 8'h03;
+		data_stm32 = 16'hdd99;
+		#1500;
+		cs_stm32 = 1;
+		w_en_stm32 = 1;
+		addr_stm32 = 8'h03;
+		data_stm32 = 16'h00ee;
+		#150;
+		
+		cs_stm32 = 0;
+		w_en_stm32 = 0;
+		addr_stm32 = 8'h04;
+		data_stm32 = 16'habcd;
+		#1500;
+		cs_stm32 = 1;
+		w_en_stm32 = 1;
+		addr_stm32 = 8'h04;
+		data_stm32 = 16'h00ee;
+		#150;		
+	
+	//相位检测代码仿真以50k信号举例	
+	/*
+		#454;
+		V_PHASE = 1;#55;I_PHASE = 1;#9945;V_PHASE = 0;#55;I_PHASE= 0;#9945;V_PHASE = 1;#55;I_PHASE = 1;#9945;V_PHASE = 0;#55;I_PHASE= 0;#9945;V_PHASE = 1;#55;I_PHASE = 1;#9945;V_PHASE = 0;#55;I_PHASE= 0;#9945;V_PHASE = 1;#55;I_PHASE = 1;#9945;V_PHASE = 0;#55;I_PHASE= 0;#9945;V_PHASE = 1;#55;I_PHASE = 1;#9945;V_PHASE = 0;#55;I_PHASE= 0;#9945;V_PHASE = 1;#55;I_PHASE = 1;#9945;V_PHASE = 0;#55;I_PHASE= 0;#9945;V_PHASE = 1;#55;I_PHASE = 1;#9945;V_PHASE = 0;#55;I_PHASE= 0;#9945;V_PHASE = 1;#55;I_PHASE = 1;#9945;V_PHASE = 0;#55;I_PHASE= 0;#9945;V_PHASE = 1;#55;I_PHASE = 1;#9945;V_PHASE = 0;#55;I_PHASE= 0;#9945;V_PHASE = 1;#55;I_PHASE = 1;#9945;V_PHASE = 0;#55;I_PHASE= 0;#9945;V_PHASE = 1;#55;I_PHASE = 1;#9945;V_PHASE = 0;#55;I_PHASE= 0;#9945;V_PHASE = 1;#55;I_PHASE = 1;#9945;V_PHASE = 0;#55;I_PHASE= 0;#9945;V_PHASE = 1;#55;I_PHASE = 1;#9945;V_PHASE = 0;#55;I_PHASE= 0;#9945;V_PHASE = 1;#55;I_PHASE = 1;#9945;V_PHASE = 0;#55;I_PHASE= 0;#9945;V_PHASE = 1;#55;I_PHASE = 1;#9945;V_PHASE = 0;#55;I_PHASE= 0;#9945;V_PHASE = 1;#55;I_PHASE = 1;#9945;V_PHASE = 0;#55;I_PHASE= 0;#9945;V_PHASE = 1;#55;I_PHASE = 1;#9945;V_PHASE = 0;#55;I_PHASE= 0;#9945;V_PHASE = 1;#55;I_PHASE = 1;#9945;V_PHASE = 0;#55;I_PHASE= 0;#9945;V_PHASE = 1;#55;I_PHASE = 1;#9945;V_PHASE = 0;#55;I_PHASE= 0;#9945;V_PHASE = 1;#55;I_PHASE = 1;#9945;V_PHASE = 0;#55;I_PHASE= 0;#9945;V_PHASE = 1;#55;I_PHASE = 1;#9945;V_PHASE = 0;#55;I_PHASE= 0;#9945;V_PHASE = 1;#55;I_PHASE = 1;#9945;V_PHASE = 0;#55;I_PHASE= 0;#9945;V_PHASE = 1;#55;I_PHASE = 1;#9945;V_PHASE = 0;#55;I_PHASE= 0;#9945;V_PHASE = 1;#55;I_PHASE = 1;#9945;V_PHASE = 0;#55;I_PHASE= 0;#9945;V_PHASE = 1;#55;I_PHASE = 1;#9945;V_PHASE = 0;#55;I_PHASE= 0;#9945;V_PHASE = 1;#55;I_PHASE = 1;#9945;V_PHASE = 0;#55;I_PHASE= 0;#9945;V_PHASE = 1;#55;I_PHASE = 1;#9945;V_PHASE = 0;#55;I_PHASE= 0;#9945;V_PHASE = 1;#55;I_PHASE = 1;#9945;V_PHASE = 0;#55;I_PHASE= 0;#9945;V_PHASE = 1;#55;I_PHASE = 1;#9945;V_PHASE = 0;#55;I_PHASE= 0;#9945;
+		#454545;
+		I_PHASE = 1;#55;V_PHASE = 1;#9945;I_PHASE = 0;#55;V_PHASE= 0;#9945;I_PHASE = 1;#55;V_PHASE = 1;#9945;I_PHASE = 0;#55;V_PHASE= 0;#9945;I_PHASE = 1;#55;V_PHASE = 1;#9945;I_PHASE = 0;#55;V_PHASE= 0;#9945;I_PHASE = 1;#55;V_PHASE = 1;#9945;I_PHASE = 0;#55;V_PHASE= 0;#9945;I_PHASE = 1;#55;V_PHASE = 1;#9945;I_PHASE = 0;#55;V_PHASE= 0;#9945;I_PHASE = 1;#55;V_PHASE = 1;#9945;I_PHASE = 0;#55;V_PHASE= 0;#9945;I_PHASE = 1;#55;V_PHASE = 1;#9945;I_PHASE = 0;#55;V_PHASE= 0;#9945;I_PHASE = 1;#55;V_PHASE = 1;#9945;I_PHASE = 0;#55;V_PHASE= 0;#9945;I_PHASE = 1;#55;V_PHASE = 1;#9945;I_PHASE = 0;#55;V_PHASE= 0;#9945;I_PHASE = 1;#55;V_PHASE = 1;#9945;I_PHASE = 0;#55;V_PHASE= 0;#9945;I_PHASE = 1;#55;V_PHASE = 1;#9945;I_PHASE = 0;#55;V_PHASE= 0;#9945;I_PHASE = 1;#55;V_PHASE = 1;#9945;I_PHASE = 0;#55;V_PHASE= 0;#9945;I_PHASE = 1;#55;V_PHASE = 1;#9945;I_PHASE = 0;#55;V_PHASE= 0;#9945;I_PHASE = 1;#55;V_PHASE = 1;#9945;I_PHASE = 0;#55;V_PHASE= 0;#9945;I_PHASE = 1;#55;V_PHASE = 1;#9945;I_PHASE = 0;#55;V_PHASE= 0;#9945;I_PHASE = 1;#55;V_PHASE = 1;#9945;I_PHASE = 0;#55;V_PHASE= 0;#9945;I_PHASE = 1;#55;V_PHASE = 1;#9945;I_PHASE = 0;#55;V_PHASE= 0;#9945;I_PHASE = 1;#55;V_PHASE = 1;#9945;I_PHASE = 0;#55;V_PHASE= 0;#9945;I_PHASE = 1;#55;V_PHASE = 1;#9945;I_PHASE = 0;#55;V_PHASE= 0;#9945;I_PHASE = 1;#55;V_PHASE = 1;#9945;I_PHASE = 0;#55;V_PHASE= 0;#9945;I_PHASE = 1;#55;V_PHASE = 1;#9945;I_PHASE = 0;#55;V_PHASE= 0;#9945;I_PHASE = 1;#55;V_PHASE = 1;#9945;I_PHASE = 0;#55;V_PHASE= 0;#9945;I_PHASE = 1;#55;V_PHASE = 1;#9945;I_PHASE = 0;#55;V_PHASE= 0;#9945;I_PHASE = 1;#55;V_PHASE = 1;#9945;I_PHASE = 0;#55;V_PHASE= 0;#9945;I_PHASE = 1;#55;V_PHASE = 1;#9945;I_PHASE = 0;#55;V_PHASE= 0;#9945;I_PHASE = 1;#55;V_PHASE = 1;#9945;I_PHASE = 0;#55;V_PHASE= 0;#9945;I_PHASE = 1;#55;V_PHASE = 1;#9945;I_PHASE = 0;#55;V_PHASE= 0;#9945;I_PHASE = 1;#55;V_PHASE = 1;#9945;I_PHASE = 0;#55;V_PHASE= 0;#9945;I_PHASE = 1;#55;V_PHASE = 1;#9945;I_PHASE = 0;#55;V_PHASE= 0;#9945;I_PHASE = 1;#55;V_PHASE = 1;#9945;I_PHASE = 0;#55;V_PHASE= 0;#9945;I_PHASE = 1;#55;V_PHASE = 1;#9945;I_PHASE = 0;#55;V_PHASE= 0;#9945;I_PHASE = 1;#55;V_PHASE = 1;#9945;I_PHASE = 0;#55;V_PHASE= 0;#9945;
+		#7845;
+		V_PHASE = 1;#5000;I_PHASE=1;#5000;V_PHASE = 0;#5000;I_PHASE = 0;#5000; V_PHASE = 1;#5000;I_PHASE=1;#5000;V_PHASE = 0;#5000;I_PHASE = 0;#5000;V_PHASE = 1;#5000;I_PHASE=1;#5000;V_PHASE = 0;#5000;I_PHASE = 0;#5000;V_PHASE = 1;#5000;I_PHASE=1;#5000;V_PHASE = 0;#5000;I_PHASE = 0;#5000;V_PHASE = 1;#5000;I_PHASE=1;#5000;V_PHASE = 0;#5000;I_PHASE = 0;#5000;V_PHASE = 1;#5000;I_PHASE=1;#5000;V_PHASE = 0;#5000;I_PHASE = 0;#5000;V_PHASE = 1;#5000;I_PHASE=1;#5000;V_PHASE = 0;#5000;I_PHASE = 0;#5000;V_PHASE = 1;#5000;I_PHASE=1;#5000;V_PHASE = 0;#5000;I_PHASE = 0;#5000;V_PHASE = 1;#5000;I_PHASE=1;#5000;V_PHASE = 0;#5000;I_PHASE = 0;#5000;V_PHASE = 1;#5000;I_PHASE=1;#5000;V_PHASE = 0;#5000;I_PHASE = 0;#5000;V_PHASE = 1;#5000;I_PHASE=1;#5000;V_PHASE = 0;#5000;I_PHASE = 0;#5000;
+		#45454;
+		I_PHASE = 1;#5000;V_PHASE = 1;#5000;I_PHASE = 0;#5000;V_PHASE = 0;#5000;I_PHASE = 1;#5000;V_PHASE = 1;#5000;I_PHASE = 0;#5000;V_PHASE = 0;#5000;I_PHASE = 1;#5000;V_PHASE = 1;#5000;I_PHASE = 0;#5000;V_PHASE = 0;#5000;I_PHASE = 1;#5000;V_PHASE = 1;#5000;I_PHASE = 0;#5000;V_PHASE = 0;#5000;I_PHASE = 1;#5000;V_PHASE = 1;#5000;I_PHASE = 0;#5000;V_PHASE = 0;#5000;I_PHASE = 1;#5000;V_PHASE = 1;#5000;I_PHASE = 0;#5000;V_PHASE = 0;#5000;I_PHASE = 1;#5000;V_PHASE = 1;#5000;I_PHASE = 0;#5000;V_PHASE = 0;#5000;I_PHASE = 1;#5000;V_PHASE = 1;#5000;I_PHASE = 0;#5000;V_PHASE = 0;#5000;I_PHASE = 1;#5000;V_PHASE = 1;#5000;I_PHASE = 0;#5000;V_PHASE = 0;#5000;I_PHASE = 1;#5000;V_PHASE = 1;#5000;I_PHASE = 0;#5000;V_PHASE = 0;#5000;I_PHASE = 1;#5000;V_PHASE = 1;#5000;I_PHASE = 0;#5000;V_PHASE = 0;#5000;I_PHASE = 1;#5000;V_PHASE = 1;#5000;I_PHASE = 0;#5000;V_PHASE = 0;#5000;
+	*/	
+end
+always #10 FPGA_CLK =~FPGA_CLK;
+endmodule

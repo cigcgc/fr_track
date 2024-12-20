@@ -1,0 +1,25 @@
+-series GW2A
+-device GW2A-18
+-device_version C
+-package eLQFP144
+-part_number GW2A-LV18EQ144C8/I7
+
+
+-mod_name Gowin_MULT_12b
+-file_name gowin_mult_12b
+-path E:/a_Messi/Gowin_prj/1energe/2024-5/rs_h_v0.3/rs_h/src/gowin_mult_12b/
+-type MULT
+-file_type vlg
+-source_a parallel
+-source_b parallel
+-width_a 12
+-width_b 12
+-data_type_a unsigned
+-data_type_b unsigned
+-en_shiftout_a false
+-en_shiftout_b false
+-reset_mode sync
+-ina_reg registered
+-inb_reg registered
+-pipe_reg bypass
+-out_reg registered

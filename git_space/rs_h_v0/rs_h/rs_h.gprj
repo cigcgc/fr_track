@@ -1,0 +1,44 @@
+<?xml version="1" encoding="UTF-8"?>
+<!DOCTYPE gowin-fpga-project>
+<Project>
+    <Template>FPGA</Template>
+    <Version>5</Version>
+    <Device name="GW2A-18C" pn="GW2A-LV18EQ144C8/I7">gw2a18c-005</Device>
+    <FileList>
+        <File path="src/IP core/cordic/cordic.v" type="file.verilog" enable="1"/>
+        <File path="src/Phase_measure.v" type="file.verilog" enable="1"/>
+        <File path="src/adc_ads804e.v" type="file.verilog" enable="1"/>
+        <File path="src/adc_data.v" type="file.verilog" enable="1"/>
+        <File path="src/dds_happen.v" type="file.verilog" enable="1"/>
+        <File path="src/defuzzification.v" type="file.verilog" enable="1"/>
+        <File path="src/feedback_processing.v" type="file.verilog" enable="1"/>
+        <File path="src/fifo_hs/fifo_hs_adc_i.v" type="file.verilog" enable="1"/>
+        <File path="src/fifo_hs/fifo_hs_adc_v.v" type="file.verilog" enable="1"/>
+        <File path="src/fuzzification.v" type="file.verilog" enable="1"/>
+        <File path="src/fuzzy_inference.v" type="file.verilog" enable="1"/>
+        <File path="src/gowin_clkdiv/gowin_clkdiv10.v" type="file.verilog" enable="1"/>
+        <File path="src/gowin_clkdiv/gowin_clkdiv500k.v" type="file.verilog" enable="1"/>
+        <File path="src/gowin_clkdiv/gowin_clkdiv5M.v" type="file.verilog" enable="1"/>
+        <File path="src/gowin_clkdiv/gowin_clkdiv_2M5.v" type="file.verilog" enable="1"/>
+        <File path="src/gowin_mult_12b/gowin_mult_12b.v" type="file.verilog" enable="0"/>
+        <File path="src/gowin_prom/gowin_prom.v" type="file.verilog" enable="1"/>
+        <File path="src/gowin_rpll/gowin_rpll100.v" type="file.verilog" enable="1"/>
+        <File path="src/gowin_rpll/gowin_rpll_100M.v" type="file.verilog" enable="1"/>
+        <File path="src/gowin_rrom/gowin_rrom.v" type="file.verilog" enable="1"/>
+        <File path="src/gowin_sdpb/gowin_sdpb_02.v" type="file.verilog" enable="1"/>
+        <File path="src/gowin_sdpb/gowin_sdpb_adc_data.v" type="file.verilog" enable="0"/>
+        <File path="src/gowin_sdpb_4096/gowin_sdpb_2048.v" type="file.verilog" enable="1"/>
+        <File path="src/gowin_sdpb_4096/gowin_sdpb_4096.v" type="file.verilog" enable="0"/>
+        <File path="src/incremental_pid_control.v" type="file.verilog" enable="1"/>
+        <File path="src/mcp41010.v" type="file.verilog" enable="1"/>
+        <File path="src/phase_2/dds_drive.v" type="file.verilog" enable="1"/>
+        <File path="src/pid_controller.v" type="file.verilog" enable="1"/>
+        <File path="src/save_fsmc.v" type="file.verilog" enable="1"/>
+        <File path="src/save_send_adc.v" type="file.verilog" enable="1"/>
+        <File path="src/sin_to_square.v" type="file.verilog" enable="1"/>
+        <File path="src/tb_top.v" type="file.verilog" enable="0"/>
+        <File path="src/top.v" type="file.verilog" enable="1"/>
+        <File path="src/rs_h.cst" type="file.cst" enable="1"/>
+        <File path="src/rs_h.rao" type="file.gao" enable="0"/>
+    </FileList>
+</Project>

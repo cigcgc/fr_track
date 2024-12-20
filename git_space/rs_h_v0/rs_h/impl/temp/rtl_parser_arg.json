@@ -1,0 +1,129 @@
+{
+ "Device" : "GW2A-18C",
+ "Files" : [
+  {
+   "Path" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/IP core/cordic/cordic.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/Phase_measure.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/adc_ads804e.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/adc_data.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/dds_happen.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/defuzzification.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/feedback_processing.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/fifo_hs/fifo_hs_adc_i.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/fifo_hs/fifo_hs_adc_v.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/fuzzification.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/fuzzy_inference.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/gowin_clkdiv/gowin_clkdiv10.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/gowin_clkdiv/gowin_clkdiv500k.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/gowin_clkdiv/gowin_clkdiv5M.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/gowin_clkdiv/gowin_clkdiv_2M5.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/gowin_prom/gowin_prom.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/gowin_rpll/gowin_rpll100.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/gowin_rpll/gowin_rpll_100M.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/gowin_rrom/gowin_rrom.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/gowin_sdpb/gowin_sdpb_02.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/gowin_sdpb_4096/gowin_sdpb_2048.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/incremental_pid_control.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/mcp41010.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/phase_2/dds_drive.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/pid_controller.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/save_fsmc.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/save_send_adc.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/sin_to_square.v",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/top.v",
+   "Type" : "verilog"
+  }
+ ],
+ "IncludePath" : [
+
+ ],
+ "LoopLimit" : 2000,
+ "ResultFile" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/impl/temp/rtl_parser.result",
+ "Top" : "top",
+ "VerilogStd" : "verilog_2001",
+ "VhdlStd" : "vhdl_93"
+}

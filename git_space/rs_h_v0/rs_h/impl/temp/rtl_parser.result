@@ -1,0 +1,302 @@
+[
+ {
+  "InstFile" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/IP core/cordic/cordic.v",
+  "InstLine" : 4496,
+  "InstName" : "CORDIC_Top_degree",
+  "ModuleFile" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/IP core/cordic/cordic.v",
+  "ModuleLine" : 4496,
+  "ModuleName" : "CORDIC_Top_degree",
+  "SubInsts" : [
+   {
+    "InstFile" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/IP core/cordic/cordic.v",
+    "InstLine" : 4517,
+    "InstName" : "u_cordic",
+    "ModuleFile" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/IP core/cordic/cordic.v",
+    "ModuleLine" : 10,
+    "ModuleName" : "~cordic_core.CORDIC_Top_degree"
+   }
+  ]
+ },
+ {
+  "InstFile" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/feedback_processing.v",
+  "InstLine" : 1,
+  "InstName" : "feedback_processing",
+  "ModuleFile" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/feedback_processing.v",
+  "ModuleLine" : 1,
+  "ModuleName" : "feedback_processing"
+ },
+ {
+  "InstFile" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/fifo_hs/fifo_hs_adc_i.v",
+  "InstLine" : 692,
+  "InstName" : "FIFO_HS_Top_adc_i",
+  "ModuleFile" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/fifo_hs/fifo_hs_adc_i.v",
+  "ModuleLine" : 692,
+  "ModuleName" : "FIFO_HS_Top_adc_i",
+  "SubInsts" : [
+   {
+    "InstFile" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/fifo_hs/fifo_hs_adc_i.v",
+    "InstLine" : 717,
+    "InstName" : "fifo_inst",
+    "ModuleFile" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/fifo_hs/fifo_hs_adc_i.v",
+    "ModuleLine" : 10,
+    "ModuleName" : "~fifo.FIFO_HS_Top_adc_i"
+   }
+  ]
+ },
+ {
+  "InstFile" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/fifo_hs/fifo_hs_adc_v.v",
+  "InstLine" : 692,
+  "InstName" : "FIFO_HS_Top_adc_v",
+  "ModuleFile" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/fifo_hs/fifo_hs_adc_v.v",
+  "ModuleLine" : 692,
+  "ModuleName" : "FIFO_HS_Top_adc_v",
+  "SubInsts" : [
+   {
+    "InstFile" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/fifo_hs/fifo_hs_adc_v.v",
+    "InstLine" : 717,
+    "InstName" : "fifo_inst",
+    "ModuleFile" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/fifo_hs/fifo_hs_adc_v.v",
+    "ModuleLine" : 10,
+    "ModuleName" : "~fifo.FIFO_HS_Top_adc_v"
+   }
+  ]
+ },
+ {
+  "InstFile" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/gowin_rpll/gowin_rpll100.v",
+  "InstLine" : 10,
+  "InstName" : "Gowin_rPLL100",
+  "ModuleFile" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/gowin_rpll/gowin_rpll100.v",
+  "ModuleLine" : 10,
+  "ModuleName" : "Gowin_rPLL100"
+ },
+ {
+  "InstFile" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/gowin_rrom/gowin_rrom.v",
+  "InstLine" : 10,
+  "InstName" : "Gowin_rROM",
+  "ModuleFile" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/gowin_rrom/gowin_rrom.v",
+  "ModuleLine" : 10,
+  "ModuleName" : "Gowin_rROM"
+ },
+ {
+  "InstFile" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/gowin_sdpb/gowin_sdpb_02.v",
+  "InstLine" : 10,
+  "InstName" : "Gowin_SDPB_02",
+  "ModuleFile" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/gowin_sdpb/gowin_sdpb_02.v",
+  "ModuleLine" : 10,
+  "ModuleName" : "Gowin_SDPB_02"
+ },
+ {
+  "InstFile" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/incremental_pid_control.v",
+  "InstLine" : 1,
+  "InstName" : "incremental_pid_control",
+  "ModuleFile" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/incremental_pid_control.v",
+  "ModuleLine" : 1,
+  "ModuleName" : "incremental_pid_control"
+ },
+ {
+  "InstFile" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/sin_to_square.v",
+  "InstLine" : 2,
+  "InstName" : "sin_to_square",
+  "ModuleFile" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/sin_to_square.v",
+  "ModuleLine" : 2,
+  "ModuleName" : "sin_to_square"
+ },
+ {
+  "InstFile" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/top.v",
+  "InstLine" : 1,
+  "InstName" : "top",
+  "ModuleFile" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/top.v",
+  "ModuleLine" : 1,
+  "ModuleName" : "top",
+  "SubInsts" : [
+   {
+    "InstFile" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/top.v",
+    "InstLine" : 67,
+    "InstName" : "pll_100",
+    "ModuleFile" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/gowin_rpll/gowin_rpll_100M.v",
+    "ModuleLine" : 10,
+    "ModuleName" : "Gowin_rPLL_100M"
+   },
+   {
+    "InstFile" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/top.v",
+    "InstLine" : 77,
+    "InstName" : "your_instance_name",
+    "ModuleFile" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/gowin_clkdiv/gowin_clkdiv10.v",
+    "ModuleLine" : 9,
+    "ModuleName" : "Gowin_CLKDIV10"
+   },
+   {
+    "InstFile" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/top.v",
+    "InstLine" : 83,
+    "InstName" : "clkdiv_5M",
+    "ModuleFile" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/gowin_clkdiv/gowin_clkdiv5M.v",
+    "ModuleLine" : 10,
+    "ModuleName" : "Gowin_CLKDIV5M"
+   },
+   {
+    "InstFile" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/top.v",
+    "InstLine" : 89,
+    "InstName" : "clkdiv2M",
+    "ModuleFile" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/gowin_clkdiv/gowin_clkdiv500k.v",
+    "ModuleLine" : 10,
+    "ModuleName" : "Gowin_CLKDIV500k"
+   },
+   {
+    "InstFile" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/top.v",
+    "InstLine" : 95,
+    "InstName" : "clkdiv_2M5",
+    "ModuleFile" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/gowin_clkdiv/gowin_clkdiv_2M5.v",
+    "ModuleLine" : 10,
+    "ModuleName" : "Gowin_CLKDIV_2M5"
+   },
+   {
+    "InstFile" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/top.v",
+    "InstLine" : 101,
+    "InstName" : "clkdiv500k",
+    "ModuleFile" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/gowin_clkdiv/gowin_clkdiv500k.v",
+    "ModuleLine" : 10,
+    "ModuleName" : "Gowin_CLKDIV500k"
+   },
+   {
+    "InstFile" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/top.v",
+    "InstLine" : 107,
+    "InstName" : "clkdiv1M",
+    "ModuleFile" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/gowin_clkdiv/gowin_clkdiv500k.v",
+    "ModuleLine" : 10,
+    "ModuleName" : "Gowin_CLKDIV500k"
+   },
+   {
+    "InstFile" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/top.v",
+    "InstLine" : 194,
+    "InstName" : "save_fsmc_inist",
+    "ModuleFile" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/save_fsmc.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "save_fsmc"
+   },
+   {
+    "InstFile" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/top.v",
+    "InstLine" : 245,
+    "InstName" : "mcp41010_inist1",
+    "ModuleFile" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/mcp41010.v",
+    "ModuleLine" : 2,
+    "ModuleName" : "mcp41010"
+   },
+   {
+    "InstFile" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/top.v",
+    "InstLine" : 256,
+    "InstName" : "mcp41010_inist2",
+    "ModuleFile" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/mcp41010.v",
+    "ModuleLine" : 2,
+    "ModuleName" : "mcp41010"
+   },
+   {
+    "InstFile" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/top.v",
+    "InstLine" : 275,
+    "InstName" : "Phase_measure_inist",
+    "ModuleFile" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/Phase_measure.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "Phase_measure"
+   },
+   {
+    "InstFile" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/top.v",
+    "InstLine" : 304,
+    "InstName" : "adc_v",
+    "ModuleFile" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/adc_ads804e.v",
+    "ModuleLine" : 2,
+    "ModuleName" : "adc_ads804e"
+   },
+   {
+    "InstFile" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/top.v",
+    "InstLine" : 314,
+    "InstName" : "adc_i",
+    "ModuleFile" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/adc_ads804e.v",
+    "ModuleLine" : 2,
+    "ModuleName" : "adc_ads804e"
+   },
+   {
+    "InstFile" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/top.v",
+    "InstLine" : 362,
+    "InstName" : "save_send_adc",
+    "ModuleFile" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/save_send_adc.v",
+    "ModuleLine" : 2,
+    "ModuleName" : "save_send_adc",
+    "SubInsts" : [
+     {
+      "InstFile" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/save_send_adc.v",
+      "InstLine" : 177,
+      "InstName" : "v_adc_data1",
+      "ModuleFile" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/gowin_sdpb_4096/gowin_sdpb_2048.v",
+      "ModuleLine" : 10,
+      "ModuleName" : "Gowin_SDPB_2048"
+     },
+     {
+      "InstFile" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/save_send_adc.v",
+      "InstLine" : 191,
+      "InstName" : "i_adc_data1",
+      "ModuleFile" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/gowin_sdpb_4096/gowin_sdpb_2048.v",
+      "ModuleLine" : 10,
+      "ModuleName" : "Gowin_SDPB_2048"
+     }
+    ]
+   },
+   {
+    "InstFile" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/top.v",
+    "InstLine" : 379,
+    "InstName" : "dds_happen",
+    "ModuleFile" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/dds_happen.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "dds_happen",
+    "SubInsts" : [
+     {
+      "InstFile" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/dds_happen.v",
+      "InstLine" : 34,
+      "InstName" : "rom_2048_11",
+      "ModuleFile" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/gowin_prom/gowin_prom.v",
+      "ModuleLine" : 10,
+      "ModuleName" : "Gowin_pROM"
+     }
+    ]
+   },
+   {
+    "InstFile" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/top.v",
+    "InstLine" : 403,
+    "InstName" : "dds_drive_u",
+    "ModuleFile" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/phase_2/dds_drive.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "dds_drive"
+   },
+   {
+    "InstFile" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/top.v",
+    "InstLine" : 424,
+    "InstName" : "fuzzification_inist",
+    "ModuleFile" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/fuzzification.v",
+    "ModuleLine" : 4,
+    "ModuleName" : "fuzzification"
+   },
+   {
+    "InstFile" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/top.v",
+    "InstLine" : 432,
+    "InstName" : "fuzzy_inference_inist",
+    "ModuleFile" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/fuzzy_inference.v",
+    "ModuleLine" : 4,
+    "ModuleName" : "fuzzy_inference"
+   },
+   {
+    "InstFile" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/top.v",
+    "InstLine" : 438,
+    "InstName" : "defuzzification_inist",
+    "ModuleFile" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/defuzzification.v",
+    "ModuleLine" : 2,
+    "ModuleName" : "defuzzification"
+   },
+   {
+    "InstFile" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/top.v",
+    "InstLine" : 444,
+    "InstName" : "DUT",
+    "ModuleFile" : "D:/Joy/project/Gowin_project/fr_track/rs_h_v0/rs_h/src/pid_controller.v",
+    "ModuleLine" : 1,
+    "ModuleName" : "pid_controller"
+   }
+  ]
+ }
+]

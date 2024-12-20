@@ -1,0 +1,15 @@
+[General]
+ipc_version=4
+file=pid_controller_3p3z
+module=PID_Controller_3p3z_Top
+target_device=gw2a18c-005
+type=pid_controller_3p3z
+version=1.0
+
+[Config]
+DATA_WIDTH=0
+INPUT_CHANNELS=1
+LANG=0
+PARAM_FRACTION_WIDTH=8
+PARAM_FRACTION_WIDTH_LABEL=(1-15)
+Synthesis_tool=GowinSynthesis

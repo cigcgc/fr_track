@@ -1,0 +1,80 @@
+﻿module top(
+	input FPGA_CLK,
+	input RST,
+	output led4,
+	output led3,
+	//FSMC
+	//FSMC
+	input cs_stm32,
+	input w_en_stm32,
+	input r_en_stm32,
+	input [7:0] addr_stm32,
+	inout [15:0] data_stm32,
+	input PD7,
+	input PG9,
+	input PG12
+		
+);
+wire rst;
+wire clk_100M;
+    Gowin_rPLL100 pll_100(
+        .clkout(clk_100M), //output clkout
+        .lock(rst), //output lock
+        .reset(~RST), //input reset
+        .clkin(FPGA_CLK) //input clkin
+    );	
+
+wire clk_10M;
+    Gowin_CLKDIV10 your_instance_name(
+        .clkout(clk_10M), //output clkout
+        .hclkin(FPGA_CLK), //input hclkin
+        .resetn(rst) //input resetn
+    );
+reg [23:0] cnt_led;	
+always@(posedge clk_10M or negedge rst)begin
+	if(!rst)begin
+		cnt_led <= 0;
+	end
+	else if(cnt_led <= 26'd10000000)begin
+		cnt_led <= cnt_led + 1;
+	end
+	else begin
+		cnt_led <= 0;
+	end
+end
+assign led4 = (cnt_led <= 5000000)?1:0;
+assign led3 = (cnt_led <= 5000000)?1:0;
+/*
+wire phase_done,rms_done,adc_h_done,eeprom_done;
+wire [15:0] phase;	
+wire [15:0] rms;
+wire [15:0] adc_h_data;
+wire [31:0] bianhao;
+wire [7:0]cishu;
+wire [63:0]cuowuma;
+wire [319:0] temp;
+save_fsmc save_fsmc_inist(
+	.clk(clk_100M),
+	.rst(rst),
+	.cs(cs_stm32),
+	.w_en(w_en_stm32),
+	.r_en(r_en_stm32),
+	.addr(addr_stm32),
+	.data_in(data_stm32),
+	
+	//FPGA要写入的数据
+	.phase_done(phase_done),
+	.phase(phase),
+	.rms_done(rms_done),
+	.rms(rms),
+	.adc_h_done(adc_h_done),
+	.adc_h_data(adc_h_data),
+	.eeprom_done(eeprom_done),
+	.bianhao(bianhao),
+	.cishu(cishu),
+	.cuowuma(cuowuma),
+	
+	.temp(temp)
+
+);	*/
+endmodule

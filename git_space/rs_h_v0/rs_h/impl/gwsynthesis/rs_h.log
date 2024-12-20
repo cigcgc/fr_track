@@ -1,0 +1,154 @@
+GowinSynthesis start
+Running parser ...
+Analyzing Verilog file 'D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\IP core\cordic\cordic.v'
+Analyzing Verilog file 'D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\Phase_measure.v'
+Analyzing Verilog file 'D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\adc_ads804e.v'
+Analyzing Verilog file 'D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\adc_data.v'
+Analyzing Verilog file 'D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\dds_happen.v'
+Analyzing Verilog file 'D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\defuzzification.v'
+Analyzing Verilog file 'D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\feedback_processing.v'
+Analyzing Verilog file 'D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\fifo_hs\fifo_hs_adc_i.v'
+Analyzing Verilog file 'D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\fifo_hs\fifo_hs_adc_v.v'
+Analyzing Verilog file 'D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\fuzzification.v'
+Analyzing Verilog file 'D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\fuzzy_inference.v'
+Analyzing Verilog file 'D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\gowin_clkdiv\gowin_clkdiv10.v'
+Analyzing Verilog file 'D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\gowin_clkdiv\gowin_clkdiv500k.v'
+Analyzing Verilog file 'D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\gowin_clkdiv\gowin_clkdiv5M.v'
+Analyzing Verilog file 'D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\gowin_clkdiv\gowin_clkdiv_2M5.v'
+Analyzing Verilog file 'D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\gowin_prom\gowin_prom.v'
+Analyzing Verilog file 'D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\gowin_rpll\gowin_rpll100.v'
+Analyzing Verilog file 'D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\gowin_rpll\gowin_rpll_100M.v'
+Analyzing Verilog file 'D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\gowin_rrom\gowin_rrom.v'
+Analyzing Verilog file 'D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\gowin_sdpb\gowin_sdpb_02.v'
+Analyzing Verilog file 'D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\gowin_sdpb_4096\gowin_sdpb_2048.v'
+Analyzing Verilog file 'D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\incremental_pid_control.v'
+Analyzing Verilog file 'D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\mcp41010.v'
+Analyzing Verilog file 'D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\phase_2\dds_drive.v'
+Analyzing Verilog file 'D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\pid_controller.v'
+Analyzing Verilog file 'D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\save_fsmc.v'
+WARN  (EX3792) : Literal value 'h98 truncated to fit in 6 bits("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\save_fsmc.v":204)
+Analyzing Verilog file 'D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\save_send_adc.v'
+Analyzing Verilog file 'D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\sin_to_square.v'
+Analyzing Verilog file 'D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\top.v'
+Undeclared symbol 'phase_diff', assumed default net type 'wire'("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\top.v":216)
+Undeclared symbol 'frequency_v', assumed default net type 'wire'("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\top.v":222)
+Undeclared symbol 'mcp41010_mosi1', assumed default net type 'wire'("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\top.v":252)
+Undeclared symbol 'mcp41010_sck1', assumed default net type 'wire'("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\top.v":253)
+Undeclared symbol 'mcp41010_cs1', assumed default net type 'wire'("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\top.v":254)
+Undeclared symbol 'mcp41010_mosi2', assumed default net type 'wire'("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\top.v":265)
+Undeclared symbol 'mcp41010_sck2', assumed default net type 'wire'("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\top.v":266)
+Undeclared symbol 'mcp41010_cs2', assumed default net type 'wire'("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\top.v":267)
+Undeclared symbol 'delete_cmd', assumed default net type 'wire'("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\top.v":371)
+WARN  (EX3073) : Port 'tx_done' remains unconnected for this instance("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\top.v":255)
+WARN  (EX3073) : Port 'tx_done' remains unconnected for this instance("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\top.v":268)
+Compiling module 'top'("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\top.v":1)
+Compiling module 'Gowin_rPLL_100M'("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\gowin_rpll\gowin_rpll_100M.v":10)
+Compiling module 'Gowin_CLKDIV10'("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\gowin_clkdiv\gowin_clkdiv10.v":9)
+Compiling module 'Gowin_CLKDIV5M'("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\gowin_clkdiv\gowin_clkdiv5M.v":10)
+Compiling module 'Gowin_CLKDIV500k'("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\gowin_clkdiv\gowin_clkdiv500k.v":10)
+Compiling module 'Gowin_CLKDIV_2M5'("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\gowin_clkdiv\gowin_clkdiv_2M5.v":10)
+WARN  (EX3791) : Expression size 25 truncated to fit in target size 24("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\top.v":145)
+Compiling module 'save_fsmc'("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\save_fsmc.v":1)
+WARN  (EX3791) : Expression size 12 truncated to fit in target size 11("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\save_fsmc.v":114)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 16("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\save_fsmc.v":197)
+WARN  (EX3670) : Actual bit length 201 differs from formal bit length 176 for port 'temp'("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\top.v":205)
+WARN  (EX3670) : Actual bit length 1 differs from formal bit length 16 for port 'phase_diff'("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\top.v":216)
+WARN  (EX3670) : Actual bit length 1 differs from formal bit length 32 for port 'frequency_v'("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\top.v":222)
+Compiling module 'mcp41010'("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\mcp41010.v":2)
+WARN  (EX3791) : Expression size 7 truncated to fit in target size 6("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\mcp41010.v":52)
+WARN  (EX3791) : Expression size 7 truncated to fit in target size 6("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\mcp41010.v":58)
+WARN  (EX3791) : Expression size 7 truncated to fit in target size 6("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\mcp41010.v":64)
+WARN  (EX3791) : Expression size 7 truncated to fit in target size 6("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\mcp41010.v":70)
+WARN  (EX3791) : Expression size 7 truncated to fit in target size 6("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\mcp41010.v":76)
+WARN  (EX3791) : Expression size 7 truncated to fit in target size 6("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\mcp41010.v":82)
+WARN  (EX3791) : Expression size 7 truncated to fit in target size 6("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\mcp41010.v":88)
+WARN  (EX3791) : Expression size 7 truncated to fit in target size 6("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\mcp41010.v":94)
+WARN  (EX3791) : Expression size 7 truncated to fit in target size 6("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\mcp41010.v":100)
+WARN  (EX3791) : Expression size 7 truncated to fit in target size 6("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\mcp41010.v":106)
+WARN  (EX3791) : Expression size 7 truncated to fit in target size 6("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\mcp41010.v":112)
+WARN  (EX3791) : Expression size 7 truncated to fit in target size 6("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\mcp41010.v":118)
+WARN  (EX3791) : Expression size 7 truncated to fit in target size 6("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\mcp41010.v":124)
+WARN  (EX3791) : Expression size 7 truncated to fit in target size 6("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\mcp41010.v":130)
+WARN  (EX3791) : Expression size 7 truncated to fit in target size 6("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\mcp41010.v":136)
+WARN  (EX3791) : Expression size 7 truncated to fit in target size 6("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\mcp41010.v":142)
+WARN  (EX3791) : Expression size 7 truncated to fit in target size 6("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\mcp41010.v":148)
+WARN  (EX3670) : Actual bit length 32 differs from formal bit length 1 for port 'tx_en'("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\top.v":248)
+WARN  (EX3670) : Actual bit length 32 differs from formal bit length 1 for port 'tx_en'("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\top.v":259)
+Compiling module 'Phase_measure'("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\Phase_measure.v":1)
+Compiling module 'adc_ads804e'("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\adc_ads804e.v":2)
+Compiling module 'save_send_adc'("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\save_send_adc.v":2)
+Compiling module 'Gowin_SDPB_2048'("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\gowin_sdpb_4096\gowin_sdpb_2048.v":10)
+WARN  (EX3670) : Actual bit length 32 differs from formal bit length 1 for port 'cea'("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\save_send_adc.v":180)
+WARN  (EX3670) : Actual bit length 32 differs from formal bit length 1 for port 'reseta'("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\save_send_adc.v":181)
+WARN  (EX3670) : Actual bit length 32 differs from formal bit length 1 for port 'ceb'("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\save_send_adc.v":183)
+WARN  (EX3670) : Actual bit length 32 differs from formal bit length 1 for port 'resetb'("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\save_send_adc.v":184)
+WARN  (EX3670) : Actual bit length 32 differs from formal bit length 1 for port 'oce'("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\save_send_adc.v":185)
+WARN  (EX3670) : Actual bit length 12 differs from formal bit length 11 for port 'ada'("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\save_send_adc.v":186)
+WARN  (EX3670) : Actual bit length 12 differs from formal bit length 11 for port 'adb'("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\save_send_adc.v":188)
+WARN  (EX3670) : Actual bit length 32 differs from formal bit length 1 for port 'cea'("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\save_send_adc.v":194)
+WARN  (EX3670) : Actual bit length 32 differs from formal bit length 1 for port 'reseta'("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\save_send_adc.v":195)
+WARN  (EX3670) : Actual bit length 32 differs from formal bit length 1 for port 'ceb'("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\save_send_adc.v":197)
+WARN  (EX3670) : Actual bit length 32 differs from formal bit length 1 for port 'resetb'("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\save_send_adc.v":198)
+WARN  (EX3670) : Actual bit length 32 differs from formal bit length 1 for port 'oce'("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\save_send_adc.v":199)
+WARN  (EX3670) : Actual bit length 12 differs from formal bit length 11 for port 'ada'("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\save_send_adc.v":200)
+WARN  (EX3670) : Actual bit length 12 differs from formal bit length 11 for port 'adb'("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\save_send_adc.v":202)
+WARN  (EX3670) : Actual bit length 1 differs from formal bit length 16 for port 'delete_cmd'("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\top.v":371)
+Compiling module 'dds_happen'("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\dds_happen.v":1)
+Compiling module 'Gowin_pROM'("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\gowin_prom\gowin_prom.v":10)
+WARN  (EX3670) : Actual bit length 32 differs from formal bit length 1 for port 'oce'("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\dds_happen.v":37)
+WARN  (EX3670) : Actual bit length 32 differs from formal bit length 1 for port 'en'("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\top.v":382)
+WARN  (EX3670) : Actual bit length 32 differs from formal bit length 11 for port 'pword'("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\top.v":384)
+Compiling module 'dds_drive'("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\phase_2\dds_drive.v":1)
+Compiling module 'fuzzification'("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\fuzzification.v":4)
+Compiling module 'fuzzy_inference'("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\fuzzy_inference.v":4)
+Compiling module 'defuzzification'("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\defuzzification.v":2)
+Compiling module 'pid_controller'("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\pid_controller.v":1)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 16("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\pid_controller.v":96)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 16("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\pid_controller.v":98)
+WARN  (EX3791) : Expression size 32 truncated to fit in target size 16("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\pid_controller.v":99)
+WARN  (EX3670) : Actual bit length 32 differs from formal bit length 16 for port 'setpoint'("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\top.v":447)
+WARN  (EX3670) : Actual bit length 1 differs from formal bit length 16 for port 'feedback'("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\top.v":448)
+WARN  (EX3670) : Actual bit length 32 differs from formal bit length 16 for port 'Kp'("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\top.v":449)
+WARN  (EX3670) : Actual bit length 32 differs from formal bit length 16 for port 'Ki'("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\top.v":450)
+WARN  (EX3670) : Actual bit length 32 differs from formal bit length 16 for port 'Kd'("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\top.v":451)
+WARN  (EX3670) : Actual bit length 32 differs from formal bit length 16 for port 'clk_prescaler'("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\top.v":452)
+WARN  (EX1998) : Net 'Version_Number[2]' does not have a driver("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\top.v":172)
+WARN  (EX1998) : Net 'phase_diff' does not have a driver("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\top.v":216)
+WARN  (EX1998) : Net 'frequency_v' does not have a driver("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\top.v":222)
+WARN  (EX1998) : Net 'delete_cmd' does not have a driver("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\top.v":371)
+NOTE  (EX0101) : Current top module is "top"
+WARN  (EX0211) : The output port "save_over_i" of module "save_send_adc" has no driver, assigning undriven bits to Z, simulation mismatch possible("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\save_send_adc.v":14)
+WARN  (EX0211) : The output port "led3" of module "top" has no driver, assigning undriven bits to Z, simulation mismatch possible("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\top.v":5)
+[5%] Running netlist conversion ...
+WARN  (CV0016) : Input PD7 is unused("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\top.v":20)
+WARN  (CV0016) : Input PG9 is unused("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\top.v":21)
+WARN  (CV0016) : Input PG12 is unused("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\top.v":22)
+Running device independent optimization ...
+[10%] Optimizing Phase 0 completed
+[15%] Optimizing Phase 1 completed
+[25%] Optimizing Phase 2 completed
+Running inference ...
+[30%] Inferring Phase 0 completed
+[40%] Inferring Phase 1 completed
+[50%] Inferring Phase 2 completed
+[55%] Inferring Phase 3 completed
+Running technical mapping ...
+[60%] Tech-Mapping Phase 0 completed
+[65%] Tech-Mapping Phase 1 completed
+[75%] Tech-Mapping Phase 2 completed
+[80%] Tech-Mapping Phase 3 completed
+[90%] Tech-Mapping Phase 4 completed
+WARN  (NL0002) : The module "pid_controller" instantiated to "DUT" is swept in optimizing("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\top.v":454)
+WARN  (NL0002) : The module "Gowin_CLKDIV500k" instantiated to "clkdiv1M" is swept in optimizing("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\top.v":111)
+WARN  (NL0002) : The module "Gowin_CLKDIV500k" instantiated to "clkdiv500k" is swept in optimizing("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\top.v":105)
+WARN  (NL0002) : The module "Gowin_CLKDIV_2M5" instantiated to "clkdiv_2M5" is swept in optimizing("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\top.v":99)
+WARN  (NL0002) : The module "Gowin_CLKDIV5M" instantiated to "clkdiv_5M" is swept in optimizing("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\top.v":87)
+WARN  (NL0002) : The module "dds_happen" instantiated to "dds_happen" is swept in optimizing("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\top.v":387)
+WARN  (NL0002) : The module "Gowin_pROM" instantiated to "rom_2048_11" is swept in optimizing("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\dds_happen.v":41)
+WARN  (NL0002) : The module "defuzzification" instantiated to "defuzzification_inist" is swept in optimizing("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\top.v":441)
+WARN  (NL0002) : The module "fuzzy_inference" instantiated to "fuzzy_inference_inist" is swept in optimizing("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\top.v":435)
+WARN  (NL0002) : The module "mcp41010" instantiated to "mcp41010_inist1" is swept in optimizing("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\top.v":255)
+WARN  (NL0002) : The module "mcp41010" instantiated to "mcp41010_inist2" is swept in optimizing("D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\src\top.v":268)
+[95%] Generate netlist file "D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\impl\gwsynthesis\rs_h.vg" completed
+[100%] Generate report file "D:\Joy\project\Gowin_project\fr_track\rs_h_v0\rs_h\impl\gwsynthesis\rs_h_syn.rpt.html" completed
+GowinSynthesis finish

@@ -1,0 +1,120 @@
+
+//将输入量模糊化
+
+module fuzzification(
+	input clk,
+	input rst,
+    input signed[15:0] EC, // 16-bit input for EC
+    output reg [6:0] fuzzy_EC // 4-bit fuzzy output for EC
+);
+	
+always @(posedge clk or negedge rst) begin
+	if(!rst)begin
+		fuzzy_EC <= 0;
+	end
+	else begin
+
+        // 模糊化EC
+        if (EC <= -16'sd80)
+            fuzzy_EC <= 7'd0; // NBB (负超大)
+        else if (EC <= -16'sd70)
+            fuzzy_EC <= 7'd1; // NBS (负大)
+        else if (EC <= -16'sd60)
+            fuzzy_EC <= 7'd2; // NM (负中)
+        else if (EC <= -16'sd58)
+            fuzzy_EC <= 7'd3; // NS (负小)
+        else if (EC <= -16'sd55)
+            fuzzy_EC <= 7'd4; // NS (负小)
+        else if (EC <= -16'sd52)
+            fuzzy_EC <= 7'd5; // ZE (接近0)
+        else if (EC <= -16'sd49)
+            fuzzy_EC <= 7'd6; // PS (正小)
+        else if (EC <= -16'sd46)
+            fuzzy_EC <= 7'd7; // PM (正中)
+        else if (EC <= -16'sd43)
+            fuzzy_EC <= 7'd8; // PSB (正中大)
+        else if (EC <= -16'sd40)
+            fuzzy_EC <= 7'd9; // ZE (接近0)
+        else if (EC <= -16'sd37)
+            fuzzy_EC <= 7'd10; // PS (正小)
+        else if (EC <= -16'sd33)
+            fuzzy_EC <= 7'd11; // PM (正中)
+        else if (EC <= -16'sd30)
+            fuzzy_EC <= 7'd12; // PSB (正中大)
+        else if (EC <= -16'sd28)
+            fuzzy_EC <= 7'd13; // PS (正小)
+        else if (EC <= -16'sd27)
+            fuzzy_EC <= 7'd14; // PM (正中)
+        else if (EC <= -16'sd23)
+            fuzzy_EC <= 7'd15; // PSB (正中大)
+        else if  (EC <= -16'sd20)
+            fuzzy_EC <= 7'd16; // ZE (接近0)
+        else if (EC <= -16'sd19)
+            fuzzy_EC <= 7'd17; // PS (正小)
+        else if (EC <= -16'sd18)
+            fuzzy_EC <= 7'd18; // PM (正中)
+        else if (EC <= -16'sd17)
+            fuzzy_EC <= 7'd19; // PSB (正中大)
+        else if (EC <= -16'sd16)
+            fuzzy_EC <= 7'd20; // ZE (接近0)
+        else if (EC <= -16'sd15)
+            fuzzy_EC <= 7'd21; // PS (正小)
+        else if (EC <= -16'sd13)
+            fuzzy_EC <= 7'd22; // PM (正中)
+        else if (EC <= -16'sd11)
+            fuzzy_EC <= 7'd23; // PSB (正中大)
+        else if (EC <= 16'd11)
+            fuzzy_EC <= 7'd24; // PS (正小)
+        else if (EC <= 16'd13)
+            fuzzy_EC <= 7'd25; // PM (正中)
+        else if (EC <= 16'd15)
+            fuzzy_EC <= 7'd26; // PS (正小)
+        else if (EC <= 16'd17)
+            fuzzy_EC <= 7'd27; // PM (正中)
+        else if (EC <= 16'd20)
+            fuzzy_EC <= 7'd28; // ZE (接近0)
+        else if (EC <= 16'd21)
+            fuzzy_EC <= 7'd29; // PS (正小)
+        else if (EC <= 16'd22)
+            fuzzy_EC <= 7'd30; // PM (正中)
+        else if (EC <= 16'd23)
+            fuzzy_EC <= 7'd31; // PSB (正中大)
+        else if (EC <= 16'd24)
+            fuzzy_EC <= 7'd32; // PS (正小)
+        else if (EC <= 16'd25)
+            fuzzy_EC <= 7'd33; // PM (正中)
+        else if (EC <= 16'd26)
+            fuzzy_EC <= 7'd34; // PS (正小)
+        else if (EC <= 16'd28)
+            fuzzy_EC <= 7'd35; // PM (正中)
+        else if (EC <= 16'd30)
+            fuzzy_EC <= 7'd36; // PS (正小)
+        else if (EC <= 16'd33)
+            fuzzy_EC <= 7'd37; // PM (正中)
+        else if (EC <= 16'd36)
+            fuzzy_EC <= 7'd38; // PS (正小)
+        else if (EC <= 16'd39)
+            fuzzy_EC <= 7'd39; // PM (正中)
+        else if (EC <= 16'd42)
+            fuzzy_EC <= 7'd40; // ZE (接近0)
+        else if (EC <= 16'd45)
+            fuzzy_EC <= 7'd41; // PS (正小)
+        else if (EC <= 16'd48)
+            fuzzy_EC <= 7'd42; // PM (正中)
+        else if (EC <= 16'd51)
+            fuzzy_EC <= 7'd43; // PSB (正中大)
+        else if (EC <= 16'd54)
+            fuzzy_EC <= 7'd44; // PS (正小)
+        else if (EC <= 16'd57)
+            fuzzy_EC <= 7'd45; // PM (正中)
+        else if (EC <= 16'd60)
+            fuzzy_EC <= 7'd46; // PS (正小)
+        else if (EC <= 16'd70)
+            fuzzy_EC <= 7'd47; // PM (正中)
+		else
+			fuzzy_EC <= 7'd48; // PM (正中)
+    end
+end
+	
+	
+endmodule

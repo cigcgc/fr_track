@@ -1,0 +1,14 @@
+[General]
+ipc_version=4
+file=fixed_to_float
+module=Fixed_to_Float_Top
+target_device=gw2a18c-005
+type=fixed_to_float
+version=1.0
+
+[Config]
+Clock_Enable=false
+Fraction_width=16
+Integer_width=16
+LANG=0
+Synthesis_tool=GowinSynthesis

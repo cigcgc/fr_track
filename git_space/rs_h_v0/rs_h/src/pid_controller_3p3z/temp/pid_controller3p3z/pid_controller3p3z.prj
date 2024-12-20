@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gowin-synthesis-project>
+<Project>
+    <Version>beta</Version>
+    <Device id="GW2A-18C" package="eLQFP144" speed="8" partNumber="GW2A-LV18EQ144C8/I7"/>
+    <FileList>
+        <File path="D:/Joy/app/Gowin/Gowin_V1.9.8.10/IDE/ipcore/PID_Controller3p3z/data/controller_3p3z.v" type="verilog"/>
+        <File path="D:/Joy/app/Gowin/Gowin_V1.9.8.10/IDE/ipcore/PID_Controller3p3z/data/controller_3p3z_wrap.v" type="verilog"/>
+    </FileList>
+    <OptionList>
+        <Option type="disable_insert_pad" value="1"/>
+        <Option type="dsp_balance" value="1"/>
+        <Option type="include_path" value="D:/Joy/app/Gowin/Gowin_V1.9.8.10/IDE/ipcore/PID_Controller3p3z/data"/>
+        <Option type="include_path" value="D:/Joy/project/Gowin_project/rs_h_v0/rs_h/src/pid_controller_3p3z/temp/pid_controller3p3z"/>
+        <Option type="output_file" value="pid_controller_3p3z.vg"/>
+        <Option type="output_template" value="pid_controller_3p3z_tmp.v"/>
+        <Option type="ram_balance" value="1"/>
+        <Option type="ram_rw_check" value="1"/>
+        <Option type="verilog_language" value="sysv-2017"/>
+    </OptionList>
+</Project>
